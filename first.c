@@ -1,11 +1,5 @@
 #include <stdio.h>
 #include <cuda_runtime.h>
-
-void  printDevice(const cudaDeviceProp &prop)
-{
-    printf("Device Name : %s.\n", prop.name);
-}
-
 bool InitCUDA()
 {
     int count;
