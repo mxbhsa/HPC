@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <cuda_runtime.h>
-bool InitCUDA()
+__global__ bool InitCUDA()
 {
     int count;
     cudaGetDeviceCount(&count);
